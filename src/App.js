@@ -1,25 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import PrimeiroComponente from './Components/PrimeiroComponente';
+
+let nome = 'Matheus';
+let sobrenome = 'Teixeira';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <header className="App-header">
+                <h2 className='greeting'>
+                    Seja bem-vindo,{' '}
+                    <span className="nome">
+                        {nome} {sobrenome}
+                    </span>
+                    !
+                </h2>
+            </header>
+            <PrimeiroComponente />
+        </div>
+    );
 }
 
 export default App;
