@@ -22,3 +22,7 @@ html {
 .nome {
   color: skyblue;
 }
+
+main {
+  padding: 0 3rem;
+}
