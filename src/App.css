@@ -1,22 +1,11 @@
-* {
-    color: white;
-}
-
-html {
-    background: #000;
-}
-
 .greeting {
     margin-left: 3rem;
 }
 
 .App-header {
-    background-color: #151515;
     display: flex;
     flex-direction: column;
     font-size: calc(10px + 2vmin);
-    color: white;
-    box-shadow: 0 0 1rem 0 rgba(15, 15, 15, 1);
 }
 
 .nome {
@@ -61,6 +50,7 @@ h2 {
 }
 
 button {
+    color: white;
     display: block;
     width: 50vw;
     margin: 0 auto;
