@@ -1,15 +1,10 @@
+import Input from './Components/input';
 import './App.css';
 import PrimeiroComponente from './Components/component';
-import Componente2 from './Components/componente2';
 let nome = 'Matheus';
 let sobrenome = 'Teixeira';
 
 function App() {
-
-    const handleMsg = () => {
-        return console.log('Cliquei no botão');
-    }
-
     return (
         <div className="App">
             <header className="App-header">
@@ -22,9 +17,8 @@ function App() {
             </header>
             <main>
                 <PrimeiroComponente />
-                <button onClick={handleMsg}>Clique aqui!</button>
-                <Componente2 />
             </main>
+            <Input />
         </div>
     );
 }
