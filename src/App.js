@@ -1,24 +1,16 @@
-import Input from './Components/input';
 import './App.css';
-import PrimeiroComponente from './Components/component';
-let nome = 'Matheus';
-let sobrenome = 'Teixeira';
+import Hero from './Components/hero';
+import Header from './Components/header';
 
 function App() {
     return (
         <div className="App">
-            <header className="App-header">
-                <h2 className="greeting">
-                    Seja bem-vindo,{' '}
-                    <span className="nome">
-                        {nome} {sobrenome}
-                    </span>
-                </h2>
+            <header>
+                <Header />
             </header>
             <main>
-                <PrimeiroComponente />
+                <Hero />
             </main>
-            <Input />
         </div>
     );
 }

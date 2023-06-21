@@ -1,59 +1,62 @@
-.greeting {
-    margin-left: 3rem;
-}
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-.App-header {
-    display: flex;
-    flex-direction: column;
-    font-size: calc(10px + 2vmin);
-}
-
-.nome {
-    background: #121fcf;
-    background: linear-gradient(to right, #323ee4 0%, #00cfcf 100%);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+* {
+    font-family: 'Lexend', sans-serif;
 }
 
 h2 {
     font-size: calc(10px + 2vmin);
 }
 
-.componente1 {
+.hero {
     display: grid;
     align-items: center;
     justify-items: center;
     grid-template-areas:
-        '. . .'
-        '. p1 img'
-        '. p1 img'
-        '. . .';
+        '. .'
+        'p1 img'
+        'btn img';
     gap: 5rem;
 }
 
-.componente1 .text {
+.hero .aside {
+    text-align: center;
     grid-area: p1;
 }
 
-.componente1 h2 {
+.hero .texto h2 {
+    margin: 0;
+    font-size: 4rem;
+}
+
+.hero .texto p {
+    font-size: 2rem;
+}
+
+h2 {
     background: #121fcf;
     background: linear-gradient(to right, #323ee4 0%, #00cfcf 50%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.componente1 img {
+.hero img {
     border-radius: 100px 0 0 100px;
     height: 75vh;
     width: 100%;
     grid-area: img;
 }
 
-button {
+.btn-flex {
+    grid-area: btn;
+    justify-content: center;
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
     color: white;
     display: block;
-    width: 50vw;
-    margin: 0 auto;
     background-color: #303030;
     padding: 1rem;
     font-size: 1.2rem;
@@ -61,11 +64,58 @@ button {
     border-radius: 1rem;
     justify-content: center;
 }
+.btn-outline {
+    color: black;
+    display: block;
+    background-color: transparent;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border: 2px solid blue;
+    border-radius: 1rem;
+    justify-content: center;
+}
+.btn-outline:hover {
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+}
 
-button:hover {
+.btn:hover {
+    cursor: pointer;
     background-color: #454545;
 }
 
-ul {
-    margin: 3rem;
+.header {
+    display: flex;
+    backdrop-filter: blur(2px);
+}
+
+nav {
+    display: block;
+    margin: auto;
+}
+
+.nav {
+    align-content: center;
+    display: flex;
+    gap: 5rem;
+}
+
+li {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 120%;
+}
+nav a:hover {
+    text-decoration: none;
+    color: #757575;
+    font-size: 120%;
+}
+
+#brand {
+    margin: 1rem;
 }
