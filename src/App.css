@@ -1,5 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #3ddab4;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #00cfcf;
+}
+
 * {
     font-family: 'Lexend', sans-serif;
 }
@@ -13,9 +33,11 @@ h2 {
     align-items: center;
     justify-items: center;
     grid-template-areas:
-        '. .'
-        'p1 img'
-        'btn img';
+        '. . .'
+        '. . img'
+        '. p1 img'
+        '. btn img'
+        '. . img';
     gap: 5rem;
 }
 
@@ -42,8 +64,8 @@ h2 {
 
 .hero img {
     border-radius: 100px 0 0 100px;
+    justify-self: right;
     height: 75vh;
-    width: 100%;
     grid-area: img;
 }
 
@@ -52,6 +74,11 @@ h2 {
     justify-content: center;
     display: flex;
     gap: 1rem;
+}
+
+.brandA {
+    margin: 0;
+    text-decoration: none;
 }
 
 .btn {
@@ -86,8 +113,14 @@ h2 {
 }
 
 .header {
+    z-index: 100;
+    padding: 0 2rem;
+    border-radius: 0 0 2rem;
+    position: fixed;
     display: flex;
     backdrop-filter: blur(2px);
+    background-color: #eee;
+    align-items: center;
 }
 
 nav {
@@ -118,4 +151,193 @@ nav a:hover {
 
 #brand {
     margin: 1rem;
+}
+
+.flex {
+    justify-content: center;
+    text-align: center;
+    max-width: 75vw;
+    justify-content: space-around;
+    margin: 4rem auto;
+    display: flex;
+}
+
+.Desc {
+    margin-top: 2rem;
+    padding: 1rem 0;
+    background-color: #00cfcf20;
+}
+
+.Desc h2 {
+    margin: 0;
+    font-size: 4rem;
+}
+
+.Desc p {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.Destinos {
+    margin: 3rem auto;
+    max-width: 95vw;
+}
+
+.destinos-grid {
+    display: grid;
+    grid-template-areas:
+        'tipos cards cards cards cards'
+        'tipos cards cards cards cards'
+        'tipos cards cards cards cards';
+}
+
+.tipos {
+    position: sticky;
+    top: 10rem;
+}
+
+.tipos li {
+    align-items: center;
+    display: flex;
+    font-size: 24px;
+    grid-area: tipos;
+    padding: 1rem;
+    margin: 0.5rem;
+    box-shadow: 0 0.05rem 0.5rem #eee;
+    border-radius: 1rem;
+}
+
+.tipos ul {
+    padding: 0;
+}
+
+.tipos li img {
+    margin-right: 1rem;
+}
+
+.tipos li:hover {
+    scale: 1.01;
+    box-shadow: 0 0.05rem 0.6rem #ddd;
+}
+
+.tipos img:hover {
+    scale: 1.2;
+}
+
+.mais {
+    background-color: #3ddab4;
+    color: white;
+}
+
+.tipos a {
+    text-decoration: none;
+    color: black;
+}
+
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: cards;
+}
+
+.Card {
+    box-sizing: border-box;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.2rem 0.6rem #ddd;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.Card:hover,
+.Card img:hover {
+    scale: 1.01;
+}
+
+.Footer a {
+    color: black;
+    text-decoration: none;
+}
+
+.card-img {
+    border-radius: 0.5rem;
+}
+
+.Footer {
+    padding: 3rem 1rem;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+}
+
+.Footer li {
+    margin: 0 2rem;
+}
+
+.badge-containers {
+    display: flex;
+    margin: 0 auto;
+    width: 65%;
+    border-radius: 1rem;
+    height: 3rem;
+}
+
+.badge {
+    display: flex;
+    align-items: center;
+    width: min-content;
+    margin: 0.5rem;
+    border-radius: 0.75rem;
+    padding: 0.25rem;
+    background-color: rgba(255, 255, 255, 0.519);
+    box-shadow: 0 0.1rem 1rem #ccc;
+}
+
+.badge img {
+    margin: 0.5rem;
+}
+
+.destinos-header {
+    align-items: center;
+    display: flex;
+    z-index: 95;
+    padding: 4rem 0 1rem 0;
+    background-color: white;
+    position: sticky;
+    top: 0;
+}
+
+.filter.selected {
+    scale: 1.01;
+    box-shadow: 0 0.05rem 0.6rem #ddd;
+    border: solid 5px #00cfcf44;
+}
+
+.copy {
+    padding: 0.25rem;
+    color: white;
+    background-color: #505050;
+    gap: 0.45rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.copy a {
+    color: #ddd;
+}
+
+.mmais {
+    display: flex;
+    margin-top: 1rem;
+    text-decoration: none;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.badge:hover {
+    scale: 1.05;
 }
