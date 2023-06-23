@@ -9,18 +9,13 @@ const Footer = () => {
                     alt="around-the-globe"
                 />
                 <h2 id="brand">YouTravel</h2>
-                <ul className="footer">
+
+                <div className="flex-column mapa">
                     <h3>Mapa do Site</h3>
-                    <li>
-                        <a href="./#">Saiba mais</a>
-                    </li>
-                    <li>
-                        <a href="./#">Nossos pacotes</a>
-                    </li>
-                    <li>
-                        <a href="./#">Destinos</a>
-                    </li>
-                </ul>
+                    <a href="./#">Saiba mais</a>
+                    <a href="./#">Nossos pacotes</a>
+                    <a href="./#">Destinos</a>
+                </div>
                 <ul className="flex">
                     <li>
                         <a href="">
@@ -81,7 +76,7 @@ const Footer = () => {
                     src="https://img.icons8.com/color-glass/96/info.png"
                     alt="info"
                 />
-                Este é um site fictício - Feito por
+                Este é um site fictício e não funcional - Feito por
                 <a href="https://mdteixeira.github.io" target="_blank">
                     Matheus Teixeira
                 </a>

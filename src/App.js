@@ -4,6 +4,7 @@ import Header from './Components/header';
 import Desc from './Components/desc';
 import Destinos from './Components/destinos';
 import Footer from './Components/footer';
+import Promo from './Components/promo';
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
             <main>
                 <Hero />
                 <Desc />
+                <Promo />
                 <Destinos />
             </main>
             <footer>
