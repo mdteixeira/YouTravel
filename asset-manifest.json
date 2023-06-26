@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/YouTravel/static/css/main.20b65896.css",
+    "main.js": "/YouTravel/static/js/main.fc20a60e.js",
+    "static/js/787.b2dd5762.chunk.js": "/YouTravel/static/js/787.b2dd5762.chunk.js",
+    "static/media/buenos aires.png": "/YouTravel/static/media/buenos aires.8ef215475d326772a76b.png",
+    "static/media/seoul.png": "/YouTravel/static/media/seoul.fdf7c557e87aaff33759.png",
+    "static/media/lisboa.png": "/YouTravel/static/media/lisboa.1ff6eee5d6bf978cec70.png",
+    "static/media/riodejaneiro.png": "/YouTravel/static/media/riodejaneiro.914054679d0a1d9ac54c.png",
+    "static/media/barcelona.png": "/YouTravel/static/media/barcelona.a62d647d210e36f76112.png",
+    "static/media/dubai.png": "/YouTravel/static/media/dubai.e9bc9f80d792c086ea3e.png",
+    "static/media/paraty.png": "/YouTravel/static/media/paraty.d913282fbeab537ae1c0.png",
+    "static/media/santiago.png": "/YouTravel/static/media/santiago.f2e48e73c0ee3e418228.png",
+    "static/media/paris.png": "/YouTravel/static/media/paris.2ab88d1d415b6a9128ff.png",
+    "static/media/taiwan.png": "/YouTravel/static/media/taiwan.8ab539e9a9e172685508.png",
+    "static/media/singapura.png": "/YouTravel/static/media/singapura.a77d86ad49a131b3b533.png",
+    "static/media/londres.png": "/YouTravel/static/media/londres.84ccd3693c321d9a6c37.png",
+    "index.html": "/YouTravel/index.html",
+    "main.20b65896.css.map": "/YouTravel/static/css/main.20b65896.css.map",
+    "main.fc20a60e.js.map": "/YouTravel/static/js/main.fc20a60e.js.map",
+    "787.b2dd5762.chunk.js.map": "/YouTravel/static/js/787.b2dd5762.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.20b65896.css",
+    "static/js/main.fc20a60e.js"
+  ]
+}
