@@ -1,7 +1,7 @@
 const Desc = () => {
     return (
         <div className="Desc">
-            <div className="flex my-4">
+            <div className="flex my-4 fwrap">
                 <div className="item">
                     <p>Mais de</p>
                     <h2>500</h2>

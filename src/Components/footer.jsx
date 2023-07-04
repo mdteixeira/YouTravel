@@ -69,18 +69,6 @@ const Footer = () => {
                     </li>
                 </ul>
             </div>
-            <div className="copy">
-                <img
-                    width="24"
-                    height="24"
-                    src="https://img.icons8.com/color-glass/96/info.png"
-                    alt="info"
-                />
-                Este é um site fictício e não funcional - Feito por
-                <a href="https://mdteixeira.github.io" target="_blank">
-                    Matheus Teixeira
-                </a>
-            </div>
         </>
     );
 };
