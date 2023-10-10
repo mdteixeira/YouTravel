@@ -11,63 +11,33 @@ import seoul from './../Assets/cards/seoul.png';
 import taiwan from './../Assets/cards/taiwan.png';
 import singapura from './../Assets/cards/singapura.png';
 
-const Card = () => {
+const cardInfo = [
+    { image: paris, name: 'Paris' },
+    { image: paraty, name: 'Paraty' },
+    { image: riodejaneiro, name: 'Rio de Janeiro' },
+    { image: londres, name: 'Londres' },
+    { image: barcelona, name: 'Barcelona' },
+    { image: lisboa, name: 'Lisboa' },
+    { image: santiago, name: 'Santiago' },
+    { image: buenosAires, name: 'Buenos Aires' },
+    { image: seoul, name: 'Seoul' },
+    { image: dubai, name: 'Dubai' },
+    { image: taiwan, name: 'Taiwan' },
+    { image: singapura, name: 'Singapura' },
+];
+
+const renderCard = (card, index) => {
     return (
-        <div className="cardContainer">
-            <div className="Card">
-                <img src={paris} alt="Paris" className="card-img" />
-                <h2>Paris</h2>
-            </div>
-            <div className="Card">
-                <img src={paraty} alt="paraty" className="card-img" />
-                <h2>Paraty</h2>
-            </div>
-            <div className="Card">
-                <img
-                    src={riodejaneiro}
-                    alt="riodejaneiro"
-                    className="card-img"
-                />
-                <h2>Rio de Janeiro</h2>
-            </div>
-            <div className="Card">
-                <img src={londres} alt="londres" className="card-img" />
-                <h2>Londres</h2>
-            </div>
-            <div className="Card">
-                <img src={barcelona} alt="barcelona" className="card-img" />
-                <h2>Barcelona</h2>
-            </div>
-            <div className="Card">
-                <img src={lisboa} alt="lisboa" className="card-img" />
-                <h2>Lisboa</h2>
-            </div>
-            <div className="Card">
-                <img src={santiago} alt="santiago" className="card-img" />
-                <h2>Santiago</h2>
-            </div>
-            <div className="Card">
-                <img src={buenosAires} alt="buenosAires" className="card-img" />
-                <h2>Buenos Aires</h2>
-            </div>
-            <div className="Card">
-                <img src={dubai} alt="dubai" className="card-img" />
-                <h2>Dubai</h2>
-            </div>
-            <div className="Card">
-                <img src={seoul} alt="seoul" className="card-img" />
-                <h2>Seoul</h2>
-            </div>
-            <div className="Card">
-                <img src={taiwan} alt="taiwan" className="card-img" />
-                <h2>Taiwan</h2>
-            </div>
-            <div className="Card">
-                <img src={singapura} alt="singapura" className="card-img" />
-                <h2>Singapura</h2>
-            </div>
-        </div>
+        <div className="Card" key={index}>
+            <img src={card.image} alt="Paris" className="card-img" />
+            <h2>{card.name}</h2>
+            <a className='btn' href='/'>Conferir</a>
+        </div> 
     );
+};
+
+const Card = () => {
+    return <div className="cardContainer">{cardInfo.map(renderCard)}</div>;
 };
 
 export default Card;

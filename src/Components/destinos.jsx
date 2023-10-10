@@ -2,7 +2,7 @@ import Card from './card';
 
 const Destinos = () => {
     return (
-        <div className="Destinos">
+        <div className="Destinos" id='destinos'>
             <div className="destinos-header">
                 <h2>Para onde você quer ir?</h2>
                 <div className="badge-containers">
